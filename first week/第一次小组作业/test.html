@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8" />
+    <title>登录</title>
+    <link rel="icon" href="icon.png" type="image/x-png">
+    <style type="text/css">
+        body {
+            width: 800px;
+            height: 520px;
+            background: url("background3.jpg");
+            background-repeat: no-repeat;
+        }
+
+        #login_frame {
+            width: 400px;
+            height: 260px;
+            padding: 13px;
+            position: absolute;
+            left: 41%;
+            right: 50%;
+            top: 60%;
+            margin-bottom: 50%;
+            margin-left: -100px;
+            margin-top: -200px;
+
+            background-color: rgba(240, 255, 255, 0.6);
+
+            border-radius:20px;
+            text-align: center;
+        }
+
+
+        .text_class {
+            width: 280px;
+            height: 26px;
+            border-top-left-radius:5px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border: 0;
+        }
+
+        #btn_title{
+            font-size: 50px;
+            font-family: 方正清刻本悦宋简体;
+            position: absolute;
+            left: 43%;
+            right: 40%;
+            top: 20%;
+            color: white;
+
+
+        }
+
+        #btn_login {
+            font-size: 14px;
+            font-family: 宋体;
+
+            width: 120px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+
+            color: white;
+            background-color:#3BD9FF;
+            border-radius: 5px;
+            border: 0;
+
+
+        }
+        #btn_regis {
+            font-size: 14px;
+            font-family: 宋体;
+            width: 120px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            color: white;
+            background-color: #3BD9FF;
+            border-radius: 5px;
+            border: 0;
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="btn_title">
+    <p>登录页</p>
+</div>
+<div id ="login_frame">
+    <form method ="post" action="#">
+        <div>
+            <p>账号  <input type="text" id="username" placeholder="请输入用户名" class="text_class"></p>
+        </div>
+
+        <div>
+        <p>密码  <input type="text" id="password" placeholder="请输入密码" class="text_class"></p>
+</div>
+
+
+<div id="login_control">
+    <input type="button" id="btn_login" value="登录" />
+
+    <input type="button" id="btn_regis" value="注册"/>
+</div>
+</form>
+
+
+
+</body>
+</html>
