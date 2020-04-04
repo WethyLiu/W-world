@@ -43,6 +43,12 @@ void welcome()
     {
         case 1:
         {
+            if(s!=NULL)
+            {
+                printf("栈已存在，不支持此操作\n");
+                system("pause");
+                goto A;
+            }
             printf("请输入想生成的栈的长度\n");
             scanf("%d",&p);
             s=initStack(s,p);
@@ -59,7 +65,7 @@ void welcome()
                 system("pause");
                 goto A;
             }
-            Status(s);
+            s=destroyStack(s);
             system("pause");
             goto A;
         }
@@ -68,11 +74,13 @@ void welcome()
             if(s==NULL)
     {
         printf("栈不存在，不支持该操作\n");
+        system("pause");
         goto A;
     }
     if (s->top==-1)
     {
         printf("栈为空\n");
+        system("pause");
         goto A;
     }
         i=s->elem[s->top];
