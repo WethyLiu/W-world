@@ -56,7 +56,7 @@ void welcome()
 	case 8:DeAQueue(s);system("pause");goto A;
 	case 9:IsFullAQueue(s);system("pause");goto A;
 	case 10:p=LengthAQueue(s);printf("the length is %d",p);system("pause");goto A;
-	case 11:break;
+	case 11:DestoryAQueue(s);break;
     default:printf("error\n");goto A;
     }
 }
